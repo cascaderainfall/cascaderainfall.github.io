@@ -1,0 +1,109 @@
+#baseURL: https://cascade.github.io
+languageCode: en-us
+title: A place where I write down stuff
+theme: "WonderMod"
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+enableGitInfo: true
+
+permalinks:
+  posts: "/:filename"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "A place where I write down stuff"
+  description: "Collection of guides and stuff"
+  keywords: [Privacy, Security, Research]
+  author: Cascade
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto 
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowFullTextinRSS: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
+
+  homeInfoParams:
+    Title: "Hello. Idk what to write here"
+    Content: stuff.
+
+  socialIcons:
+    - name: mastodon
+      url: "https://social.lol/@cascade"
+    - name: matrix
+      url: "https://matrix.to/#/@cascaderainfall:matrix.org"
+    - name: github
+      url: "https://github.com/cascaderainfall"
+    - name: reddit
+      url: "https://reddit.com/u/cascaderainfall"
+    - name: rss
+      url: /index.xml
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  #editPost:
+    URL: "https://github.com/cascaderainfall/cascaderainfall.github.io/blob/main/content"
+    Text: "Source code" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "summary"]
+
+#Enabling Search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+markup:
+    highlight:
+        style: dracula
+        lineNos: false
+        noClasses: false
+        guessSyntax: true
+
+menu:
+  main:
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 10
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 20
+    - identifier: Search
+      name: search
+      url: /search/
+      weight: 30
