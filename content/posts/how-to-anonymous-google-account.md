@@ -50,11 +50,11 @@ I myself create accounts using this method with Mullvad VPN and have not had muc
 ![Easy as pie](/img/wellthatwaseasygoogle.png)
 
 Servers in these countries have high success rates:
-- Lithuania \[li]
-- Luxembourg \[lu]
-- Estonia \[ee]
-- Romania \[ro]
-- Switzerland \[ch]
+- Liechtenstein [🇱🇮]
+- Luxembourg [🇱🇺]
+- Estonia [🇪🇪]
+- Romania [🇷🇴]
+- Switzerland [🇨🇭]
 - other Eastern European countries
 
 The procedure is:
@@ -82,6 +82,7 @@ BTW, don't try free SMS verification sites as they don't work and are just a was
 
 ## AFTER YOU SUCCESSFULLY CREATE THE ACCOUNT
 Immediately go into your Google account settings and enable **2FA**. Make sure to save the backup codes, too. 
+![Google 2FA](/img/google2fa.png)
 Turning on 2FA will greatly reduce the chance of your account getting flagged/banned and save you a lot of hassle. TOTP is recommended but FIDO2 will work just as well. Don't use SMS for 2FA. 
 
 DO NOT SKIP THIS STEP NO MATTER WHAT METHOD(S) YOU USE
