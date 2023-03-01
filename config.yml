@@ -90,6 +90,8 @@ markup:
     goldmark:
         renderer:
             hardWraps: true
+        extensions:
+            footnote: true
     highlight:
         style: dracula
         lineNos: false
