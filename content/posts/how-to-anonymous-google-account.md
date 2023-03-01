@@ -1,9 +1,9 @@
 ---
 title: "How to Create and Use a Google Account Anonymously on GrapheneOS"
 date: 2023-02-05
-draft: true
+draft: false
 tags: [GrapheneOS, Google, Anonymity]
-author: ["cascade", "Netcake"]
+author: ["Cascade", "Netcake"]
 ---
 
 
@@ -17,16 +17,16 @@ There are essentially 3 ways to create a Google account anonymously
 3. [**Paid VPN**](#paid-vpn)
 
 [**Anonymous Phone Verification**](#anonymous-phone-verification) can be used in combination with any other method for convenience or reducing trouble.
-
-</br>
+<br>
+<br>
 
 ### Public Wi-Fi
 Basically go outside, touch some grass; and find a place with public access free Wi-Fi. After connecting to the Wi-Fi, open a fresh incognito tab on Vanadium, go to `google.com` and create an account.
 If you're lucky, Google won't ask for a phone number, and you're good to go!
 
 I have used this method at coffee shops, restaurants and stores all over town and it has worked like a charm.  
-
-</br>
+<br>
+<br>
 
 ### Free VPN / Tor
 This method involves more luck than the others. Use any free VPN you want (or Tor) and hope you get an exit IP that isn't blacklisted by Google.
@@ -39,17 +39,15 @@ The procedure is:
 6. change VPN / Tor server and repeat
 
 Note that using Tor will likely get your account flagged and Google to ask for phone number verification. See [Anonymous Phone Verification](#anonymous-phone-verification).  
-
-</br>
+<br>
+<br>
 
 ### Paid VPN
 This method involves using a paid VPN so that you can choose VPN servers that are unlikely to be blacklisted by Google. 
 
 I myself create accounts using this method with Mullvad VPN and have not had much trouble. Heck, I created one just now!
-<details>
-  <summary style="color: #26b72b; padding: 2px 6px; width: 15em; border: solid; box-shadow: 3px 3px 4px black; cursor: pointer; background-color: #343434; list-style: none;"> click to load external image </summary>
-  <img src="https://cascade.url.lol/wowthatwaseasygoogle" alt="Well that was easy! I swear this used to be harder lol" loading="lazy" style="border: dashed cyan;">
-</details>
+
+![asd](/img/wellthatwaseasygoogle.png)
 
 Servers in these countries have high success rates:
 - Lithuania \[li]
@@ -66,8 +64,8 @@ The procedure is:
 4. try to create an account
 5. if it says phone number required, fully exit out and close Vanadium from the task switcher
 6. change VPN server and repeat
-
-</br>
+<br>
+<br>
 
 ### Anonymous Phone Verification
 This is not an account creation method per se, but rather a way to create/secure an account with phone number verification without providing your real phone number. This allows you to create an account using any other method, even if Google forces you to enter a phone number. And it can be done WHILE or AFTER creating the account.
@@ -79,17 +77,16 @@ I've used this method with 5sim *-dot-* net and had problems after the initial a
 Note that this method is the safest for persistent (non-throwaway) accounts as Google is highly unlikely to flag your account or ask for a phone number later on. And it allows you to turn on Google's [*Automatic Account Deletion*](https://support.google.com/accounts/answer/3036546?hl=en) feature.
 
 BTW, don't try free SMS verification sites as they don't work and are just a waste of your time.
-
-</br>
+<br>
+<br>
 
 ## AFTER YOU SUCCESSFULLY CREATE THE ACCOUNT
 Immediately go into your Google account settings and enable **2FA**. Make sure to save the backup codes, too. 
 Turning on 2FA will greatly reduce the chance of your account getting flagged/banned and save you a lot of hassle. TOTP is recommended but FIDO2 will work just as well. Don't use SMS for 2FA. 
 
 DO NOT SKIP THIS STEP NO MATTER WHAT METHOD(S) YOU USE
-
-</br>
-</br>
+<br>
+<br>
 
 ## Using The Anonymous Account on GrapheneOS
 If you are going to use GrapheneOS's [**sandboxed Google Play Services**](https://grapheneos.org/usage#sandboxed-google-play) there are a few things to keep in mind. You should create a new user profile and install a VPN / Orbot FIRST. To install, you can get the APKs from Aurora Store / GitHub or, if you already have Play Services on your 'Owner' profile, by cloning them. Depending on which VPN/Tor app you use.
@@ -100,10 +97,10 @@ However, this is not the end. You need to beware of bad practices that can deano
 It is **UNACCEPTABLE** to log in to this account on any profile which already has/had Play Services as every profile on Android has an app ID based unique identifier which can be used by Google or other parties to deanonymize you. See [grapheneos.org/faq#non-hardware-identifiers](https://grapheneos.org/faq#non-hardware-identifiers)
 
 If you have the exact same apps installed on a profile with another Google account logged in, Google can theoretically make a connection between the accounts.
-Also, Play Services can also read only the country code of any inserted SIM card or active eSIM on the device. For example, Google will know that a `+49` (Germany) SIM card is inserted but will not know the phone number.
+Also, Play Services can read only the country code of any inserted SIM card or active eSIM on the device. For example, Google will know that a `+49` (Germany) SIM card is inserted but will not know the phone number.
 Play Services can also see how much global empty storage space is available on the device.
-
-</br>
+<br>
+<br>
 
 ## General Advice
 **DO NOT** use the Google account on your private (home/mobile) internet without a VPN/Tor. Google will associate your IP address to the accounts and you will lose your anonymity.
@@ -119,25 +116,17 @@ It is recommended to use the **Always on VPN** and **Block connections without V
 **DO NOT** turn on `Google Location Accuracy`.
 
 **DO** use common sense.
-
-</br>
+<br>
+<br>
 
 **Disclaimer**: I am in no way affiliated with any of the services/websites/products mentioned here.
+<br>
+Thanks to my friend Netcake for his help in research, testing, and writing.  
+<br>
 
-</br>
 
-Thanks to my friend Netcake for his help in research, testing, and writing.
-
-</br>
 
 ##### Feedback
 Contact me on Matrix (`@cascaderainfall:matrix.org`) or shoot me an email at `feedback -at- mail.cascade.omg.lol` or literally any other way listed on [my profile](https://cascade.profile.lol) for feedback and suggestions.
 ##### Want to improve this page?
-Check out this blog's [GitHub repository](https://github.com/cascaderainfall/webloglol).
-
-<div style="display:none;">
-<video>
-<source src="https://cascade.url.lol/anonymousgoogleaccountguide">
-this is just an anonymous visitor counter (collects no data)
-</video>
-</div>
+Check out this blog's [GitHub repository](https://github.com/cascaderainfall/cascaderainfall.github.io/).

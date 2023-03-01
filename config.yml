@@ -45,16 +45,16 @@ params:
     disableFingerprinting: false
 
   homeInfoParams:
-    Title: "Hello. Idk what to write here"
-    Content: stuff.
+    Title: "Welcome"
+    Content: Here are some useful guides and stuff about privacy, security, anonymity.
 
   socialIcons:
-    - name: mastodon
-      url: "https://social.lol/@cascade"
-    - name: matrix
-      url: "https://matrix.to/#/@cascaderainfall:matrix.org"
     - name: github
       url: "https://github.com/cascaderainfall"
+    - name: matrix
+      url: "https://matrix.to/#/@cascaderainfall:matrix.org"
+    - name: mastodon
+      url: "https://social.lol/@cascade"
     - name: reddit
       url: "https://reddit.com/u/cascaderainfall"
     - name: rss
@@ -65,9 +65,9 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  #editPost:
+  editPost:
     URL: "https://github.com/cascaderainfall/cascaderainfall.github.io/blob/main/content"
-    Text: "Source code" # edit text
+    Text: "Suggest changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
   fuseOpts:
@@ -87,11 +87,15 @@ outputs:
         - JSON # is necessary
 
 markup:
+    goldmark:
+        renderer:
+            hardWraps: true
     highlight:
         style: dracula
         lineNos: false
         noClasses: false
         guessSyntax: true
+
 
 menu:
   main:
