@@ -47,7 +47,7 @@ This method involves using a paid VPN so that you can choose VPN servers that ar
 
 I myself create accounts using this method with Mullvad VPN and have not had much trouble. Heck, I created one just now!
 
-![asd](/img/wellthatwaseasygoogle.png)
+![Easy as pie](/img/wellthatwaseasygoogle.png)
 
 Servers in these countries have high success rates:
 - Lithuania \[li]
