@@ -1,6 +1,6 @@
 baseURL: https://cascaderainfall.github.io
 languageCode: en-us
-title: A place where I write down stuff.
+title: A place where I write down stuff
 theme: "WonderMod"
 
 enableRobotsTXT: true
@@ -66,7 +66,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/cascaderainfall/cascaderainfall.github.io/blob/main/content"
+    URL: "https://github.com/cascaderainfall/cascaderainfall.github.io/blob/master/content"
     Text: "Suggest changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
