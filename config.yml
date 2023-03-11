@@ -20,10 +20,10 @@ params:
   env: production
   title: "A place where I write down stuff"
   description: "Collection of guides and stuff"
-  keywords: [Privacy, Security, Research]
+  keywords: [Privacy, Security, Anonimity, Research]
   author: Cascade
   DateFormat: "January 2, 2006"
-  defaultTheme: auto 
+  defaultTheme: dark 
   disableThemeToggle: false
 
   ShowReadingTime: true
